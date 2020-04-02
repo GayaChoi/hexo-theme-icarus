@@ -7,7 +7,7 @@
 <title><%= page_title() %></title>
 
 <% if (has_config('open_graph')) { %>
-    <%- open_graph({
+<%- open_graph({
         twitter_id: get_config('open_graph.twitter_id'),
         twitter_site: get_config('open_graph.twitter_site'),
         google_plus: get_config('open_graph.google_plus'),
@@ -31,13 +31,13 @@
 
 <%- _css(cdn('bulma', '0.7.2', 'css/bulma.css')) %>
 <%- _css(iconcdn()) %>
-<%- _css(fontcdn('Ubuntu:400,600|Source+Code+Pro')) %>
+<%- _css(fontcdn('Nanum Gothic:400,600|Nanum Gothic Coding')) %>
 <%- _css(cdn('highlight.js', '9.12.0', 'styles/' + get_config('article.highlight.theme') + '.css')) %>
 
 <% if (has_config('plugins')) { %>
-    <% for (let plugin in get_config('plugins')) { %>
-    <%- _partial('plugin/' + plugin, { head: true, plugin: get_config('plugins')[plugin] }) %>
-    <% } %>
+<% for (let plugin in get_config('plugins')) { %>
+<%- _partial('plugin/' + plugin, { head: true, plugin: get_config('plugins')[plugin] }) %>
+<% } %>
 <% } %>
 
 <%- _css('css/style') %>

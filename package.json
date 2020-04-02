@@ -1,22 +1,5 @@
 {
   "name": "hexo-theme-icarus",
   "version": "2.6.0",
-  "private": true,
-  "engines": {
-    "node": ">=8.3.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/GayaChoi/hexo-theme-icarus.git"
-  },
-  "keywords": [
-    "blog"
-  ],
-  "author": "gaya",
-  "license": "MIT",
-  "bugs": {},
-  "homepage": "",
-  "dependencies": {
-    "hexo-generator-json-content": "^4.1.6"
-  }
+  "private": true
 }
